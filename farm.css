@@ -1,0 +1,49 @@
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+body {
+	padding: 7px;
+	background-color: rgb(220, 255, 220);
+}
+
+.farm {
+	padding:5px; height:500px; background: rgba(210,235,45,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(210,235,45,1) 0%, rgba(162,255,0,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,235,45,1)), color-stop(100%, rgba(162,255,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(210,235,45,1) 0%, rgba(162,255,0,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(210,235,45,1) 0%, rgba(162,255,0,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(210,235,45,1) 0%, rgba(162,255,0,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(210,235,45,1) 0%, rgba(162,255,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2eb2d', endColorstr='#a2ff00', GradientType=1 );
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 150px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 70%;
+	margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
